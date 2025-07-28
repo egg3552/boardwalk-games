@@ -1,4 +1,16 @@
-/* Inter Font Styles */
+/* CSS Custom Properties */
+:root {
+  /* Font family variables */
+  --primary-font: "Inter", sans-serif;
+  --secondary-font: "Macondo", cursive;
+  /* Color variables */
+   --primary-color: #8B4513;
+   --secondary-color: #aa9581;
+   --highlight-color: #416a8e;
+   --light-highlight-color: #7a9fc2;
+}
+
+/* Inter Font Styles - Various font weights for Inter font */
 .inter-regular {
   font-family: "Inter";
   font-optical-sizing: auto;
@@ -27,24 +39,49 @@
   font-style: normal;
 }
 
+/* Global Styles */
 /* Apply Inter font to the entire page */
 body {
-  font-family: "Inter";
+  font-family: var(--primary-font);
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-/* Apply Macondo font to all h1 elements */
-h1 {
+/* Typography */
+h1, h2, h3 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+}
+
+
+p {
+    border: 2px solid var(--primary-color)
+}
+
+
+
+/* Utility Classes */
+/* Sub-heading color class */
+.sub-heading-color {
+  color: var(--highlight-color);
+}
+
+/* Macondo Font Style - Utility class for applying Macondo font */
+.macondo-regular {
   font-family: "Macondo", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
-/* Macondo Font Style */
-.macondo-regular {
-  font-family: "Macondo", cursive;
-  font-weight: 400;
-  font-style: normal;
+/* grid visualisation CSS for testing */
+
+.container,
+.row {
+    border: 2px solid black;
+}
+
+.col-12 {
+    border: 2px solid white;
+    background-color: lightgray;
 }
