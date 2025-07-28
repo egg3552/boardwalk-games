@@ -104,3 +104,47 @@ h1 {
   font-family: var(--secondary-font);
   font-weight: bold;
 }
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  /* Make all service cards the same height for consistency */
+  #services .card {
+    height: 100%;
+  }
+  #services .card-body {
+    min-height: 280px;
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  /* Make all service cards the same height for consistency */
+  #services .card {
+    height: 100%;
+  }
+  #services .card-body {
+    min-height: 240px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  /* Make all service cards the same height for consistency */
+  #services .card {
+    height: 100%;
+  }
+  #services .card-body {
+    min-height: 220px;
+  }
+}
+
+/* Extra extra large devices (larger desktops, 1400px and up) */
+@media screen and (min-width: 1400px) {
+  /* Make all service cards the same height for consistency */
+  #services .card {
+    height: 100%;
+  }
+  #services .card-body {
+    min-height: 240px;
+  }
+}
