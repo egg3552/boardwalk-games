@@ -54,12 +54,15 @@ h1, h2, h3 {
     color: var(--primary-color);
 }
 
-
-p {
-    border: 2px solid var(--primary-color)
+h1 {
+    text-transform: uppercase;
 }
 
-
+/* Layout */
+.section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 
 /* Utility Classes */
 /* Sub-heading color class */
