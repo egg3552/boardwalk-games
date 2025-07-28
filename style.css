@@ -147,6 +147,32 @@ footer p {
   color: white;
 }
 
+/* Opening Times Table Styling */
+.opening-times-table {
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.opening-times-table th,
+.opening-times-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.opening-times-table th {
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.opening-times-table td[colspan="2"] {
+  text-align: center;
+  font-style: italic;
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
   /* Make all service cards the same height for consistency */
