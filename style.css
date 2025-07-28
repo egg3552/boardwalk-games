@@ -4,7 +4,7 @@
   --primary-font: "Inter", sans-serif;
   --secondary-font: "Macondo", cursive;
   /* Color variables */
-   --primary-color: #8B4513;
+   --primary-color: #3D1E05;
    --secondary-color: #aa9581;
    --highlight-color: #416a8e;
    --light-highlight-color: #7a9fc2;
@@ -75,13 +75,29 @@ p {
 }
 
 /* grid visualisation CSS for testing */
-
-.container,
-.row {
+/* Only apply borders to specific test containers, not all Bootstrap containers */
+.test-container,
+.test-row {
     border: 2px solid black;
 }
 
-.col-12 {
+.test-col {
     border: 2px solid white;
     background-color: lightgray;
+}
+
+/* Navbar Styling */
+#navbar {
+  background-color: var(--primary-color) !important;
+}
+
+/* Ensure navbar links are visible on dark background */
+#navbar .navbar-nav .nav-link {
+  color: white !important;
+}
+
+#navbar .navbar-brand {
+  color: white !important;
+  font-family: var(--secondary-font);
+  font-weight: bold;
 }
